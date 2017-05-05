@@ -1,0 +1,24 @@
+body {
+	text-transform: uppercase;
+
+	color: #000000;
+	background-color: #f2f2f2;
+
+	font-family: "PTSans", "Arial", "Serif";
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 21px;
+}
+
+h2 {
+  font-size: 21px;
+	font-weight: bold;
+  line-height: 26px;
+}
+
+h3 {
+  font-size: 21px;
+	font-weight: bold;
+  line-height: 21px;
+
+}
