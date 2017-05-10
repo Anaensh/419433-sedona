@@ -4,12 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Отели</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="logo">
-      <img src="#"></img>
+      <a href="index.html">
+        <img src="img/logo.png" width="138" height="70" alt="logo-item"></img>
+      </a>
+      </a>
     </div>
     <nav>
       <ul class="menu">
@@ -22,8 +27,8 @@
   </header>
   <main>
     <section class="hotel-search">
-      <fieldset>
-        <form class="infrastructure">
+      <form>
+        <fieldset class="infrastructure">
           <legend>Инфраструктура</legend>
           <div class="column-form">
             <input id="pool" type="checkbox" checked>
@@ -37,10 +42,8 @@
             <input id="wi-fi" type="checkbox">
             <label for="wi-fi">Wi-Fi</label>
           </div>
-        </form>
-      </fieldset>
-      <fieldset>
-        <form class="accomodation-type">
+        </fieldset>
+        <fieldset class="accomodation-type">
           <legend>Тип жилья</legend>
           <div class="column-form">
             <input id="hotel" type="checkbox" checked>
@@ -54,21 +57,20 @@
             <input id="apartments" type="checkbox" checked>
             <label for="apartments">Апартаменты</label>
           </div>
-        </form>
-      </fieldset>
-      <fieldset>
-        <legend>Стоимость в сутки (Р):</legend>
-        <div></div>
-      </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <div></div>
+      </form>
     </section>
     <section>
       <div>
-        <div> <span>Найдено: 3
-        </span>
+        <div>
+          <span>Найдено: 3</span>
         </div>
       </div>
       <div>
-        <h2>Сортировка:</h2>
+        <h2 class="caption">Сортировка:</h2>
         <ul>
           <li class="active"><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -81,11 +83,11 @@
       </div>
     </section>
     <article>
-      <div>
-        <img href="#">
+      <div class="photoblock">
+        <img src="img/amara-resort-spa.jpg" alt="hotel" width="135" height="90">
       </div>
       <div>
-        <div>
+        <div class="hotel-name">
           <h1>Amara resort &amp; spa</h1>
           <div>
             <span>Гостиница</span>
@@ -97,8 +99,8 @@
           </div>
         </div>
         <div>
-          <div>
-            <img src="#">
+          <div class="photoblock">
+            <!-- звездочки фоном -->
             <div class="rating">
               <span>Рейтинг: 8,5</span>
             </div>
@@ -107,10 +109,10 @@
     </article>
     <article>
       <div>
-        <img href="#">
+        <img src="img/desert-quail-inn.jpg" alt="motel" width="135" height="90">
       </div>
       <div>
-        <div>
+        <div class="hotel-name">
           <h1>Desert Quail Inn</h1>
           <div>
             <span>Мотель</span>
@@ -123,30 +125,32 @@
         </div>
         <div>
           <div class="rating">
-            <img src="#">
+            <!-- звездочки фоном -->
             <span>Рейтинг: 8,9</span>
           </div>
         </div>
     </article>
     <article>
       <div>
+        <img src="img/villas-poco-diablo.jpg" alt="apartments" width="135" height="90">
+      </div>
+      <div class="hotel-name">
+        <h1>VILLAS AT POCO DIABLO</h1>
         <div>
-          <h1>VILLAS AT POCO DIABLO</h1>
-          <div>
-            <span>Аппартаменты</span>
-            <a href="#">Подробнее</a>
-          </div>
-          <div>
-            <span>От 2000 Р.</span>
-            <a href="#">Забронировать</a>
-          </div>
+          <span>Аппартаменты</span>
+          <a href="#">Подробнее</a>
         </div>
         <div>
-          <div class="rating">
-            <img src="#">
-            <span>Рейтинг: 9,2</span>
-          </div>
+          <span>От 2000 Р.</span>
+          <a href="#">Забронировать</a>
         </div>
+      </div>
+      <div>
+        <div class="rating">
+          <!-- звездочки фоном -->
+          <span>Рейтинг: 9,2</span>
+        </div>
+      </div>
     </article>
   </main>
   <footer class="main-footer">
@@ -160,9 +164,9 @@
         <li><a href="#">youtube<span class="icon-youtube"></span></a></li>
       </ul>
     </div>
-    <div>
+    <div class="website-by">
       <a href="#">
-        <span class="website-by">Website by</span>
+        <span>Website by</span>
       </a>
       <span> <!-- фоновое изображение --></span>
     </div>

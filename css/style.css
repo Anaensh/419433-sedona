@@ -10,13 +10,13 @@ body {
 	line-height: 21px;
 }
 
-h2 {
+h2 .caption {
   font-size: 21px;
 	font-weight: bold;
   line-height: 26px;
 }
 
-h3 {
+h3 .caption-3 {
   font-size: 21px;
 	font-weight: bold;
   line-height: 21px;
