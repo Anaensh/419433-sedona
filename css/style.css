@@ -70,6 +70,7 @@ img {
 
 .main-header {
   display: flex;
+	justify-content: space-around;
   position: relative;
   width: 1200px;
   margin: 0 auto;
@@ -95,6 +96,11 @@ img {
 .features-item {
   width: 400px;
   padding: 0;
+}
+
+.features-image {
+	width: 800px;
+	height: 256px;
 }
 
 .features-head {
@@ -159,6 +165,7 @@ img {
   background-color: #ffffff;
   justify-content: space-between;
   align-items: center;
+	padding-top: 32px;
 }
 
 .promo-item {
@@ -167,6 +174,20 @@ img {
 	text-align: center;
 }
 
+.promo h3 {
+	padding-top: 88px;
+	margin-bottom: 36px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 21px;
+}
+
+.promo p {
+	margin-bottom: 42px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 21px;
+}
 
 .promo-item-house {
   background-image: url("../img/accomodation.png");
@@ -227,6 +248,16 @@ img {
   padding-left: 70px;
 }
 
+.search-open {
+	position: relative;
+	height: 593px;
+	background-image: url(../img/map.jpg);
+}
+
+iframe {
+	width: 1200px;
+	height: 593px;
+}
 .search {
 	background-color: #ffffff;
 	display: flex;
@@ -256,6 +287,17 @@ img {
 	background-image: url(../img/plus.png);
 }
 
+.sort {
+	display: flex;
+}
+
+.sort li {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
 .form-column {
   display: flex;
   align-self: baseline;
@@ -274,7 +316,7 @@ img {
   background-color: #f2f2f2;
 }
 
-footer {
+.main-footer {
   display: flex;
   flex-direction: row;
   width: 1200px;
@@ -303,4 +345,8 @@ footer {
 
 .photoblock {
 	padding-left: 72px;
+	width: 165px;
+	margin-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 22px;
 }
