@@ -19,10 +19,6 @@ a {
   background-color: #ffffff;
 }
 
-.main-header  {
-  position: relative;
-  width: 1200px;
-}
 .logo {
 	position: absolute;
 	top: 0;
@@ -70,7 +66,8 @@ img {
 
 .main-header {
   display: flex;
-	justify-content: space-around;
+	flex-direction: row;
+	justify-content: space-between;
   position: relative;
   width: 1200px;
   margin: 0 auto;
@@ -120,8 +117,7 @@ img {
   display: block;
   width: 600px;
   margin-bottom: 10px;
-  padding-right: 350px;
-  padding-left: 350px;
+  padding-left: 296px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -163,7 +159,7 @@ img {
   width: 100%;
   text-align: center;
   background-color: #ffffff;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 	padding-top: 32px;
 }
@@ -187,6 +183,7 @@ img {
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 21px;
+	width: 320px;
 }
 
 .promo-item-house {
@@ -269,6 +266,7 @@ iframe {
 	text-align: center;
 	justify-content: space-around;
 	align-items: center;
+	font-weight: bold;
 }
 
 .search a {
@@ -279,12 +277,137 @@ iframe {
 	line-height: 26px;
 }
 
+.check-in label {
+		min-width: 94px;
+		max-width: 94px;
+		line-height: 32px;
+	}
+
+.check-in input {
+		width: 308px;
+		min-width: 308px;
+		max-width: 308px;
+		border: 2px solid transparent ;
+		background-color: #f2f2f2;
+	}
+
+	.check-out label {
+			min-width: 94px;
+			max-width: 94px;
+			line-height: 32px;
+		}
+
+	.check-out input {
+			width: 308px;
+			min-width: 308px;
+			max-width: 308px;
+			border: 2px solid transparent ;
+			background-color: #f2f2f2;
+		}
+
+.adults label {
+	min-width: 94px;
+	max-width: 94px;
+	line-height: 32px;
+}
+
+.adults input {
+	width: 35px;
+	min-width: 35px;
+	max-width: 35px;
+	border: 2px solid transparent ;
+	background-color: #f2f2f2;
+}
+
+.adults {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	width: 230px;
+	min-width: 177px;
+	max-width: 230px;
+	white-space: pre-line;
+}
+
+.children {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	width: 230px;
+	min-width: 177px;
+	max-width: 230px;
+	white-space: pre-line;
+}
+
+.children label {
+	min-width: 94px;
+	max-width: 94px;
+	line-height: 32px;
+}
+
+.children input {
+	width: 35px;
+	min-width: 35px;
+	max-width: 35px;
+	border: 2px solid transparent ;
+	background-color: #f2f2f2;
+}
+
+.adults button {
+	width: 38px;
+	min-width: 38px;
+	max-width: 38px;
+	height: 38px;
+	color: #a9a9a9;
+	border: none;
+	outline:none;
+	background-color: #f2f2f2;
+}
+
+.children button {
+	width: 38px;
+	min-width: 38px;
+	max-width: 38px;
+	height: 38px;
+	color: #a9a9a9;
+	border: none;
+	outline:none;
+	background-color: #f2f2f2;
+}
+
+.adults .icon-minus {
+	padding-left: 10px;
+}
+
+.adults .icon-plus {
+	padding-right: 10px;
+}
+
+.children .icon-minus {
+	padding-left: 10px;
+}
+
+.children .icon-plus {
+	padding-right: 9px;
+}
+
 .icon-minus {
 	background-image: url(../img/min.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .icon-plus {
 	background-image: url(../img/plus.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.search-form {
+	display: flex;
+	width: 568px;
+	position: relative;
+margin-right: 300px;
 }
 
 .sort {
@@ -314,6 +437,7 @@ iframe {
 
 .rating {
   background-color: #f2f2f2;
+
 }
 
 .main-footer {
@@ -322,6 +446,7 @@ iframe {
   width: 1200px;
   height: 123px;
   background-color: #ffffff;
+
   justify-content: space-around;
   align-items: center;
 }
@@ -341,6 +466,7 @@ iframe {
 .website-by {
   background-image: url(../img/academy-logo.png);
   background-position: right;
+	text-align: left;
 }
 
 .photoblock {
